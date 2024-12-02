@@ -1,0 +1,9 @@
+@use "sass:color";
+$errorDark: #6e1717;
+$errorLight: color.adjust($errorDark, $lightness: 79%);
+
+.alert {
+  border: 1px solid $errorDark;
+  max-width: 750px;
+  color: $errorDark;
+}

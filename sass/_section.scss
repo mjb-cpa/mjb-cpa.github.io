@@ -1,0 +1,46 @@
+@use "variables";
+
+section {
+  padding: variables.$containerPaddingTop variables.$containerPaddingX variables.$containerPaddingBottom variables.$containerPaddingX;
+
+  @media screen and (max-width: variables.$navbarBreakpoint) {
+    padding: variables.$containerPaddingTopMedium variables.$containerPaddingXMedium variables.$containerPaddingBottomMedium variables.$containerPaddingXMedium;
+  }
+
+  @media screen and (max-width: variables.$smallBreakpoint) {
+    padding: variables.$containerPaddingTopMedium variables.$containerPaddingXSmall variables.$containerPaddingBottomMedium variables.$containerPaddingXSmall;
+  }
+
+  &:nth-of-type(even) {
+    background-color: #eee;
+  }
+
+  h1 {
+    font-size: 4em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: calc(variables.$containerPaddingTop / 3);
+    text-align: center;
+
+    @media screen and (max-width: variables.$navbarBreakpoint) {
+      font-size: 2.5em;
+    }
+
+  }
+
+  .container {
+    .page-theme-img {
+      z-index: -1;
+      top: 200px;
+      left: 50%;
+      position: absolute;
+      width: 50vw;
+      max-height: 50vh;
+      transform: rotate(15deg);
+
+      @media screen and (max-width: #{variables.$navbarBreakpoint - 1}) {
+        display: none;
+      }
+    }
+  }
+}

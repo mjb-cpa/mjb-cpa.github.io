@@ -1,0 +1,19 @@
+@use "mixins";
+
+.card {
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 5px;
+    @include mixins.cardBoxShadow;
+    .card-title {
+        font-weight: bold;
+    }
+    .card-body {
+        color: #777;
+    }
+    .card-footer {
+      font-style: italic;
+      font-size: 0.85em;
+      color: #777;
+    }
+}

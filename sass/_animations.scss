@@ -1,0 +1,51 @@
+section.animation,
+.hero.animation {
+  h1 {
+    animation: fadeFromTop 0.7s ease;
+  }
+  h2.slogan {
+    animation: fadeFromLeft 0.7s ease;
+  }
+  .social-links {
+    animation: fadeFromLeft 0.7s ease;
+  }
+  .container {
+    animation: fadeFromTopLeft 0.7s ease;
+  }
+}
+
+@keyframes fadeFromTopLeft {
+  from {
+    opacity: 0;
+    transform: translate(-15px, -15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes fadeFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

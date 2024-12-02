@@ -1,0 +1,55 @@
+@use "colors";
+@use "variables";
+
+.hero {
+  //@include designBg;
+  //padding: #{$headerSpacing} 50px 0px 50px;
+  //clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+  padding: 10px;
+  color: colors.$color2;
+  margin-bottom: 60px;
+
+  @media screen and (max-width: #{variables.$navbarBreakpoint}) {
+    margin-bottom: 20px;
+
+  }
+
+  h1 {
+    display: block;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 100px;
+
+    z-index: -1;
+    margin-top: 120px;
+
+    @media screen and (max-width: #{variables.$navbarBreakpoint}) {
+      margin-top: 60px;
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    strong {
+      font-weight: 700;
+      color: colors.$color1;
+      font-family: "Rubik", sans-serif;
+    }
+  }
+
+  h2.slogan {
+    text-align: center;
+    font-size: 1.4em;
+    z-index: 2;
+    margin-bottom: 0;
+    font-weight: 400;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+
+}

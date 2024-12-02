@@ -1,0 +1,5 @@
+@use "sass:color";
+$color1: #0067b2;
+$color2: rgb(35, 31, 32);
+$light: #f2f2f2;
+$color1-light: color.adjust($color1, $lightness: 10%);

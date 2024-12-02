@@ -1,0 +1,58 @@
+@use "variables";
+
+@for $i from 0 through 5 {
+  .px-#{$i} {
+    padding-left: $i * variables.$unit;
+    padding-right: $i * variables.$unit;
+  }
+  .py-#{$i} {
+    padding-top: $i * variables.$unit;
+    padding-bottom: $i * variables.$unit;
+  }
+  .pt-#{$i} {
+    padding-top: $i * variables.$unit;
+  }
+  .pa-#{$i} {
+    padding: $i * variables.$unit;
+  }
+  .my-#{$i} {
+    margin-top: $i * variables.$unit;
+    margin-bottom: $i * variables.$unit;
+  }
+  .mb-#{$i} {
+    margin-bottom: $i * variables.$unit;
+  }
+  .mt-#{$i} {
+    margin-top: $i * variables.$unit;
+  }
+  .ml-#{$i} {
+    margin-left: $i * variables.$unit;
+  }
+  .mr-#{$i} {
+    margin-right: $i * variables.$unit;
+  }
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.ml-n2 {
+  margin-left: -2 * variables.$unit;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-justified {
+  text-align: justify;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
